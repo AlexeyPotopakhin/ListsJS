@@ -1,0 +1,15 @@
+table {
+    display: inline-block;
+}
+
+#productsContainer {
+    width: 50%;
+    text-align: center;
+    float: left;
+}
+
+#customersContainer {
+    width: 50%;
+    text-align: center;
+    float: right;
+}
