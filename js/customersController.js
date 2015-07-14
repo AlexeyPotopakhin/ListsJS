@@ -1,7 +1,9 @@
 (function() {
     angular
         .module("app")
-        .controller("CustomersController", ["commonFactory", CustomersController]);
+        .controller("CustomersController", CustomersController);
+
+    CustomersController.$inject = ["commonFactory"];
 
     function CustomersController(commonFactory) {
         var vm = this;
