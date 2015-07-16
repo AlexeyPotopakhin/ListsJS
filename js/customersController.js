@@ -14,7 +14,8 @@
         vm.toggleList = toggleList;
         vm.addCustomer = addCustomer;
 
-        function removeCustomer(index) {
+        function removeCustomer(customer) {
+            var index = vm.customers.indexOf(customer);
             vm.customers.splice(index, 1);
         }
 

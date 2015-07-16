@@ -58,7 +58,7 @@
                     <td>{{customer.name | uppercase | user}}</td>
                     <td>{{customer.city}}</td>
                     <td>{{customer.age | number:0}}</td>
-                    <td><button ng-click="customersCtrl.removeCustomer($index)">Remove user</button></td>
+                    <td><button ng-click="customersCtrl.removeCustomer(customer)">Remove user</button></td>
                 </tr>
                 <tr>
                     <td colspan="5">Total customers: {{customersCtrl.customers.length}}</td>
